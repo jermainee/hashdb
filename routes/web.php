@@ -24,7 +24,7 @@ Route::get('/password/{password}', function (string $password) {
     $password  = DB::table('passwords')->where('value', '=', $password)->first();
 
     if (!$password) {
-        return redirect('/db');
+        return redirect('/');
     }
 
     return view('password', [
@@ -39,7 +39,7 @@ Route::get('/hash/{hash}', function (string $hash) {
     $hash  = DB::table('hashes')->where('hash', '=', $hash)->first();
 
     if (!$hash) {
-        return redirect('/db');
+        return redirect('/');
     }
 
     return view('password', [
@@ -54,7 +54,7 @@ Route::get('/algorithm/{algorithm}', function (string $algorithm) {
     $hashes = DB::table('hashes')->where('algorithm', '=', $algorithm)->orderBy('updated_at', 'desc')->paginate(50);
 
     if ($hashes->isEmpty()) {
-        return redirect('/db');
+        return redirect('/');
     }
 
     return view('password', [
