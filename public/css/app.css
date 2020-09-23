@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+    color: #00ff00;
+    padding: 1rem;
+}
+
+header {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #0b2e13;
+    border: 1px dotted #00ff00;
+    text-align: center;
+    font-size: .6rem;
+}
+
+header pre {
+    display: inline-block;
+    text-align: left;
+}
+
+header a, header a:visited, header:active {
+    text-decoration: none;
+    color: #00ff00;
+    background-color: transparent;
+}
+
+.metrics {
+    text-align: right;
+    font-size: .8rem;
+    margin-bottom: -.5rem;
+    margin-right: -.5rem;
+}
+
+nav {
+    margin-bottom: 1rem;
+}
+
+nav a {
+    display: inline-block;
+    background-color: #0b2e13;
+    color: #00ff00;
+    margin-bottom: .3rem;
+    padding: .5rem;
+}
+
+section {
+    margin-bottom: 1rem;
+}
+
+table {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+table th, table tr {
+    background-color: #0b2e13;
+    color: #00ff00;
+    text-align: left;
+}
+
+table th, table td {
+    padding: .5rem;
+}
+
+table th:before {
+    content: '.: ';
+}
+
+table th:after {
+    content: ' :.';
+}
+
+table th:first-child, table td:first-child, table td:last-child, table th:last-child  {
+    width: .1%;
+    white-space: nowrap;
+}
+
+h2 {
+    text-align: center;
+}
+
+h2:before {
+    content: '[';
+}
+
+h2:after {
+    content: ']';
+}
+
+a, a:visited {
+    text-decoration: none;
+    background-color: transparent;
+    color: #00ff00;
+}
+
+.password {
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 4rem 0;
+    color: #ff0049;
+}
+
+.links {
+    margin-top: 1rem;
+}
+
+.hidden {
+    display: none;
+}
